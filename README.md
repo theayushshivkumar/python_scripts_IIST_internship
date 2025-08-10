@@ -7,10 +7,12 @@
    - YSOs are classified into Class I/II/III, and the region files for overlaying on SAOds9 is also generated.
   
 2) SED Creation - Dust Temperature & Column Density Maps
+   -
    - Utilizes the modified blackbody function (graybody) to generate a pixel-by-pixel Spectral Energy Distribution via the technique of non-linear least-squares fitting.
    - For each pixel, the algorithm tries to find the best-fit dust temperature and column density values that give reduced chi-squared value closest to 1.
    - The values are written to FITS files to generate the dust temperature, hydrogen column density, and reduced chi-squared maps for the region of interest.
 
-3) Creating Simple Spatial Cutouts
+4) Creating Simple Spatial Cutouts
+   -
    - A simple script where custom spatial dimension cutouts can be make to study smaller regions within larger FITS files. Especially useful for slower laptops/computers.
    - Creates only rectangular cutouts and also maintains WCS information.
